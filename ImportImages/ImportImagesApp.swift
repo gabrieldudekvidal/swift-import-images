@@ -1,11 +1,5 @@
-//
-//  ImportImagesApp.swift
-//  ImportImages
-//
-//  Created by Gabriel Vidal on 2026-07-02.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct ImportImagesApp: App {
@@ -13,5 +7,6 @@ struct ImportImagesApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Photo.self)
     }
 }
